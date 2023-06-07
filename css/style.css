@@ -1,0 +1,230 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.none {
+  display: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  max-width: 1358px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: end;
+  padding-top: 25px;
+}
+
+.photo {
+  width: 322px;
+}
+
+.arrow {
+  position: absolute;
+  top: -19px;
+  left: 0;
+}
+
+.contacts {
+  background-color: #F51B1B;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-top: 40px;
+  position: relative;
+  border-radius: 24px 24px 0 0;
+  z-index: 1;
+  margin-top: -25px;
+}
+
+.contacts__name {
+  font-family: "Kanit", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.contacts__age {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+.contacts__link {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contacts__link img {
+  margin-right: 10px;
+}
+
+.main__wrapper {
+  display: flex;
+}
+
+.info {
+  margin-left: 30px;
+}
+
+.about {
+  max-width: 690px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 32px;
+}
+
+.about__wrapper {
+  border: 1px solid rgb(255, 255, 255);
+  min-width: 1008px;
+}
+
+.education {
+  margin: 20px;
+  display: flex;
+  gap: 72px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.education__title {
+  font-size: 16px;
+  line-height: 100%;
+  min-width: 200px;
+}
+.education__item {
+  margin-bottom: 8px;
+}
+.education__item:last-child {
+  margin-bottom: 20px;
+}
+.education__name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.education__course {
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.4;
+}
+.education__date {
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.4;
+  letter-spacing: -0.01em;
+}
+
+.scills__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.deco {
+  margin-top: -1px;
+}
+
+.education:last-child {
+  border: none;
+}
+
+@media (max-width: 360px) {
+  .container {
+    max-width: 340px;
+  }
+  .main__wrapper {
+    flex-direction: column;
+  }
+  .logo {
+    justify-content: start;
+    width: 220px;
+    margin-bottom: 48px;
+  }
+  .photo {
+    width: 100%;
+  }
+  .info {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .about__wrapper {
+    min-width: 340px;
+  }
+  .education {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .deco {
+    max-width: none;
+    margin-left: 75px;
+  }
+}
+@media (max-width: 414px) {
+  .container {
+    max-width: 400px;
+  }
+  .main__wrapper {
+    flex-direction: column;
+  }
+  .logo {
+    justify-content: start;
+    width: 220px;
+    margin-bottom: 48px;
+  }
+  .photo {
+    width: 100%;
+  }
+  .info {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .about__wrapper {
+    min-width: 340px;
+  }
+  .education {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .deco {
+    max-width: none;
+    margin-left: 105px;
+  }
+  .about {
+    text-align: justify;
+    margin: 20px 10px;
+  }
+}
